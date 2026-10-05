@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" fill="none">
+  <defs>
+    <linearGradient id="uaeGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#065F46" />
+      <stop offset="50%" stop-color="#044E3B" />
+      <stop offset="100%" stop-color="#022C22" />
+    </linearGradient>
+    <linearGradient id="goldShine" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE68A" />
+      <stop offset="50%" stop-color="#D97706" />
+      <stop offset="100%" stop-color="#B45309" />
+    </linearGradient>
+    <linearGradient id="leafGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+  </defs>
+  <!-- Background Badge -->
+  <rect x="8" y="8" width="104" height="104" rx="28" fill="url(#uaeGreen)" stroke="#D97706" stroke-width="2" stroke-opacity="0.3"/>
+  <!-- Star / Compass Accent -->
+  <polygon points="60,20 63,30 73,33 63,36 60,46 57,36 47,33 57,30" fill="url(#goldShine)"/>
+  <!-- Elegant Journey Pathway (Darb) -->
+  <path d="M 32 88 C 40 65, 52 55, 60 52 C 72 48, 86 54, 88 36" stroke="url(#goldShine)" stroke-width="4.5" stroke-linecap="round" fill="none"/>
+  <!-- Sustainable Leaf Arc -->
+  <path d="M 40 85 C 36 68, 54 50, 72 44 C 64 56, 52 76, 40 85 Z" fill="url(#leafGrad)" opacity="0.9"/>
+  <!-- Waypoints -->
+  <circle cx="32" cy="88" r="4.5" fill="#FDE68A" stroke="#044E3B" stroke-width="2"/>
+  <circle cx="88" cy="36" r="5" fill="#10B981" stroke="#FDE68A" stroke-width="2"/>
+</svg>

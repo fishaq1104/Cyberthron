@@ -70,6 +70,19 @@ npm run dev
 
 Visit: **http://localhost:5173**
 
+### GitHub Pages deployment
+
+The repository includes a GitHub Actions workflow at
+`.github/workflows/deploy-pages.yml`. In the repository settings, open
+**Pages**, choose **GitHub Actions** as the build and deployment source, then
+push to `main`. The workflow builds with `/Cyberthron/`, which matches the
+project URL:
+
+`https://fishaq1104.github.io/Cyberthron/`
+
+GitHub Pages hosts only the frontend. The Express API must be deployed
+separately if backend features such as login or the AI API are required.
+
 ---
 
 ## 🏛️ Architecture

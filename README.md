@@ -35,7 +35,7 @@ Darb Al Istidama is a UAE-engineered smart mobility platform designed primarily 
 ## 🚀 Quick Start
 
 ### 1. Prerequisites
-- Node.js (v18+)
+- Node.js (v20.19+ or v22.12+)
 - npm
 
 ### 2. Environment Setup
@@ -43,6 +43,16 @@ The project comes with pre-configured `.env` and `.env.example`:
 ```bash
 cp .env.example .env
 ```
+On Linux, use `npm ci` after copying the files. If the frontend and API use
+different hostnames, set `CORS_ORIGINS` in `.env` to the frontend origin(s),
+separated by commas.
+
+For a deployment under a subpath such as `/Cyberthron/`, build with:
+```bash
+VITE_BASE_PATH=/Cyberthron npm run build
+```
+The default build targets the domain root (`/`), which is the usual Linux
+reverse-proxy setup.
 
 ### 3. Run the Platform
 To launch both the backend API server and the frontend client concurrently:

@@ -48,7 +48,7 @@ export const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
           className="flex items-center gap-3 cursor-pointer group"
         >
           <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-emerald-800 to-emerald-950 p-2 border border-[#C5A059]/50 shadow-md group-hover:border-[#C5A059] transition-all flex items-center justify-center">
-            <img src="/logo.svg" alt="Darb Al Istidama" className="w-full h-full object-contain" />
+            <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="Darb Al Istidama" className="w-full h-full object-contain" />
           </div>
           <div>
             <div className="flex items-center gap-2">

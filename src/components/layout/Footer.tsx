@@ -36,7 +36,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           <div className="space-y-4">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 rounded-xl bg-emerald-900 p-1.5 border border-[#C5A059]/40 flex items-center justify-center">
-                <img src="/logo.svg" alt="Darb Al Istidama Logo" className="w-full h-full object-contain" />
+                <img src={`${import.meta.env.BASE_URL}logo.svg`} alt="Darb Al Istidama Logo" className="w-full h-full object-contain" />
               </div>
               <div>
                 <span className="font-bold text-lg text-white">Darb Al Istidama</span>
